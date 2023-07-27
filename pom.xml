@@ -27,8 +27,8 @@
         <distributionManagement>
          <repository>
             <id>nexus</id>
-            <name>narendra-snapshot</name>
-            <url>http://18.191.190.32:8081/repository/narendra-snapshot/</url>
+            <name>narendra1</name>
+            <url>http://18.191.190.32:8081/repository/narendra1/</url>
          </repository>
     </distributionManagement>
     <dependencies>
