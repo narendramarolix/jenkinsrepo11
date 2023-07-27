@@ -7,7 +7,7 @@
 
   stage('CheckOutCode'){
     steps{
-    git 'https://github.com/narendramarolix/jenkinsrepo11.git'
+    git branch: 'main', url: 'https://github.com/narendramarolix/jenkinsrepo11.git'
 	}
   }
 	       stage(build){
@@ -18,6 +18,7 @@
        }
   }
   }
+
 
 
 
