@@ -23,11 +23,7 @@
   }
   }
 
-  stage('UploadArtifactsIntoNexus'){
-  steps{
-  sh  "mvn clean deploy"
-  }
-  }
+  
 
   stage('DeployAppIntoTomcat'){
   steps{
@@ -36,7 +32,11 @@
   }
   }
   }
-
+stage('UploadArtifactsIntoNexus'){
+  steps{
+  sh  "mvn clean deploy"
+  }
+  }
 
        
   }
