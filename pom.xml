@@ -28,9 +28,17 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>narendra-repository</name>
-	      <url>http://18.191.190.32:8081/repository/narendra-release/</url>
+	      <name>narendra-release repo</name>
+	      <url>http://18.117.96.124:8081/repository/narendra-release/</url>
 	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>narendra-snapshot repo</name>
+	      <url>http:http://18.117.96.124:8081/repository/maven-snapshots/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
