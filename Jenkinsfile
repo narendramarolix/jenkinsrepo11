@@ -16,13 +16,13 @@
 	       }
 		       
        }
-	       /*
+	       
 	stage('ExecuteSonarQubeReport'){
   steps{
   sh  "mvn clean package sonar:sonar"
   }
   }
-
+/*
   stage('UploadArtifactsIntoNexus'){
   steps{
   sh  "mvn clean deploy"
