@@ -4,7 +4,7 @@
     <groupId>com.visualpathit</groupId>
     <artifactId>vprofile</artifactId>
     <packaging>war</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>Visualpathit VProfile Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
@@ -25,12 +25,20 @@
         <sonar.password>narendra</sonar.password>
     </properties>
         <distributionManagement>
-         <repository>
-            <id>nexus</id>
-            <name>narendra1</name>
-            <url>http://18.191.190.32:8081/repository/narendra-snapshot/</url>
-         </repository>
-    </distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>narendra-repository</name>
+	      <url>http://18.191.190.32:8081/repository/narendra-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>narendra-repo</name>
+	      <url>http://18.191.190.32:8081/repository/narendra-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
