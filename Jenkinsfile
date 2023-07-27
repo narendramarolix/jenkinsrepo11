@@ -28,7 +28,7 @@
   stage('DeployAppIntoTomcat'){
   steps{
   sshagent(['82296555-1009-4641-ac88-3ed00d51be83']) {
-   sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/narendra2/target/vprofile-v2.war ec2-user@18.117.181.32:/opt/apache-tomcat-9.0.78/webapps/"    
+   sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/narendra2/target/vprofile-0.0.1.war ec2-user@18.117.181.32:/opt/apache-tomcat-9.0.78/webapps/"    
   }
   }
   }
