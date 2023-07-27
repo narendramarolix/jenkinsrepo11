@@ -22,13 +22,13 @@
   sh  "mvn clean package sonar:sonar"
   }
   }
-/*
+
   stage('UploadArtifactsIntoNexus'){
   steps{
   sh  "mvn clean deploy"
   }
   }
-*/
+
   stage('DeployAppIntoTomcat'){
   steps{
   sshagent(['82296555-1009-4641-ac88-3ed00d51be83']) {
