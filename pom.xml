@@ -40,11 +40,7 @@
 	    
 	</distributionManagement>
 	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>narendra-repo</name>
-	      <url>http://18.191.190.32:8081/repository/narendra-snapshot/</url>
-	    </snapshotRepository>
+	    
 	    
 	</distributionManagement>
     <dependencies>
